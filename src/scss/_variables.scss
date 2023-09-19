@@ -1,0 +1,25 @@
+$main-black-color: #161616;
+$main-gray-color: #C5C5C5;
+$main-white-color: #FAFAFA;
+$darker-green-color: #0A7777;
+$light-green-color: #53ACAE;
+$gray-color: #A9A9A9;
+$effect-color: rgb(22 22 22 / 0.3);
+$effect-color-1: rgb(10 119 119 / 0.3);
+$effect-color-2: rgb(10 119 119 / 0.1);
+
+@mixin button-style {
+    background-color: $darker-green-color;
+    color: $main-white-color;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0 0 15px #53ACAE;
+    padding: 5px 20px 5px 20px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}

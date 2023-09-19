@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import "variables";
+
+.donate-section {
+    background-image: url('../images/donatesBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.donate-wrapper {
+    padding-top: calc(6vw);
+    padding-bottom: calc(8vw);
+}
+
+.donate-image {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.donate-button {
+    color: $main-white-color;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: lowercase;
+    background-color: $effect-color-2;
+    border: 2px solid $effect-color-1;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+    .donate-button {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .donate-button {
+        font-size: 14px;
+    }
+}
+
+.donate-span {
+    font-weight: 700;
+}

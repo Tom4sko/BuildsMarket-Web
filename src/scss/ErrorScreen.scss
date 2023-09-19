@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import "variables";
+
+.error-section {
+    background-color: $main-black-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.error-wrapper {
+    padding-top: calc(8vw);
+    padding-bottom: calc(12vw);
+}
+
+.error-table {
+    border: 2px solid $light-green-color;
+    border-radius: 20px;
+    padding: 15px;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 550px) {
+    .error-table {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .error-table {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+.error-p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: $gray-color;
+}

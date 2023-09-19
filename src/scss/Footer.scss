@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import "variables";
+
+.footer {
+    bottom: 0;
+}
+
+.footer-text {
+    color: $main-gray-color;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer-span {
+    color: $main-white-color;
+    font-weight: 700;
+}
+
+.footer-icons {
+    color: $main-white-color;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: $main-white-color;
+    margin: 0px 5px 0px 5px;
+}
+
+a:hover {
+    color: $darker-green-color;
+}

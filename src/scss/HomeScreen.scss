@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+@import "variables";
+
+.home-section {
+    background-image: url('../images/homeBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-wrap {
+    font-family: 'Poppins', sans-serif;
+    padding-top: calc(10vw);
+    padding-bottom: calc(10vw);
+}
+
+.home-wrap p {
+    color: $main-gray-color;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 600px){
+    .home-wrap p {
+        font-size: 14px;
+    }
+}
+
+.home-wrap h1 {
+    color: $main-white-color;
+    font-weight: 400;
+}
+
+.home-wrap span {
+    color: $main-white-color;
+    font-weight: 800;
+}
+
+.homescreen-button {
+    @include button-style;
+}
+
+.homescreen-button:hover {
+    background-color: $main-white-color;
+    color: $main-black-color;
+    box-shadow: 0 0 30px $main-white-color;
+}
+
+.homescreen-button:active {
+    background-color: $main-white-color !important;
+    color: $main-black-color !important;
+}

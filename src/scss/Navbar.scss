@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import "variables";
+
+.nav-bg-colour {
+    background-color: $main-black-color;
+}
+
+.navbar-toggler  {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(83,172,174, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus {
+    color: transparent;
+}
+
+.navbar-brand,
+.nav-link {
+  color:  $main-gray-color !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  border: none;
+}
+
+.nav-link:hover {
+    color: $main-white-color !important;
+    font-weight: 600;
+  }
+
+.custom-apply-button {
+    @include button-style;
+  }
+
+.custom-apply-button:hover {
+    background-color: $main-white-color;
+    color: $main-black-color;
+    box-shadow: 0 0 30px $main-white-color;
+}
+
+.custom-apply-button:active {
+    background-color: $main-white-color !important;
+    color: $main-black-color !important;
+}

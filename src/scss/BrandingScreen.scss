@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+@import "variables";
+
+.branding-section {
+    background-image: url('../images/brandingBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(25%);
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: $main-white-color;
+    font-size: 40px;
+}
+
+.branding-span {
+    font-weight: 800;
+}
+
+.branding-wrapper {
+    padding-top: calc(4vw);
+    padding-bottom: calc(8vw);
+}
+
+h4 {
+    font-size: 40px;
+    color: $main-white-color;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 600px){
+    h4 {
+        font-size: 28px;
+    }
+}
+
+.block {
+    color: $main-white-color;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.white-block {
+    width: 80px;
+    height: 80px;
+    background-color: $main-white-color !important;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.black-block {
+    width: 80px;
+    height: 80px;
+    background-color: $main-black-color !important;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.green-block {
+    width: 80px;
+    height: 80px;
+    background-color: $light-green-color !important;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.darker-green-block {
+    width: 80px;
+    height: 80px;
+    background-color: $darker-green-color !important;
+    border-radius: 25px;
+    margin: 5px;
+}
