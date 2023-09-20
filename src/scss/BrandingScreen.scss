@@ -65,3 +65,9 @@ h4 {
     font-weight: 400;
     font-size: 16px;
 }
+
+@media only screen and (max-width: 600px) {
+    .logoFull {
+        width: 200px;
+    }
+}

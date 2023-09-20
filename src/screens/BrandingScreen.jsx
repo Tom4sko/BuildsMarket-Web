@@ -28,9 +28,9 @@ const BrandingScreen = () => {
               <div>
                 <h4>Main <span className="branding-span">Full</span>Logos</h4>
                 <div className="col">
-                  <img src={logoFullOne} alt="" className="mt-3" />
-                  <img src={logoFullTwo} alt="" className="mt-3" />
-                  <img src={logoFullThree} alt="" className="mt-3 mb-5" />
+                  <img src={logoFullOne} alt="" className="mt-3 logoFull" />
+                  <img src={logoFullTwo} alt="" className="mt-3 logoFull" />
+                  <img src={logoFullThree} alt="" className="mt-3 mb-5 logoFull" />
                 </div>
               </div>
             </div>
