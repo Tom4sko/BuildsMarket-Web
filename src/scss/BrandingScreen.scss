@@ -38,39 +38,30 @@ h4 {
 }
 
 .block {
-    color: $main-white-color;
+    width: 90px;
+    height: 90px;
+    border-radius: 25px;
+}
+
+.block-white {
+    background-color: $main-white-color !important;
+}
+
+.block-black {
+    background-color: $main-black-color !important;
+}
+
+.block-light-green {
+    background-color: $light-green-color !important;
+}
+
+.block-dark-green {
+    background-color: $darker-green-color !important;
+}
+
+.p-font {
+    color:  $main-white-color;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-}
-
-.white-block {
-    width: 80px;
-    height: 80px;
-    background-color: $main-white-color !important;
-    border-radius: 25px;
-    margin: 5px;
-}
-
-.black-block {
-    width: 80px;
-    height: 80px;
-    background-color: $main-black-color !important;
-    border-radius: 25px;
-    margin: 5px;
-}
-
-.green-block {
-    width: 80px;
-    height: 80px;
-    background-color: $light-green-color !important;
-    border-radius: 25px;
-    margin: 5px;
-}
-
-.darker-green-block {
-    width: 80px;
-    height: 80px;
-    background-color: $darker-green-color !important;
-    border-radius: 25px;
-    margin: 5px;
+    font-size: 16px;
 }
