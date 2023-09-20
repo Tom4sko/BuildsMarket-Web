@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import "variables";
+
+.apply-section {
+    background-image: url('../images/apply.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apply-wrapper {
+    padding-top: calc(6vw);
+    padding-bottom: calc(8vw);
+}
+
+.roles-wrapper {
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.apply-p {
+    font-size: 20px;
+    color: $main-white-color;
+    font-family: 'Poppins', sans-serif;
+}
+
+.role {
+    @include roles;
+}
+
+@media only screen and (max-width: 500px) {
+    .role {
+        font-size: 20px;
+    }
+}
+
+.role-builder {
+    color: $secondary-purple-color !important;
+    border-color: $secondary-purple-color !important;
+}
+
+.role-graphic {
+    color: $secondary-orange-color !important;
+    border-color: $secondary-orange-color !important;
+}
+
+.role-render {
+    color: $secondary-green-color !important;
+    border-color: $secondary-green-color !important;
+}
+
+.form {
+    border: 2px solid blue;
+}

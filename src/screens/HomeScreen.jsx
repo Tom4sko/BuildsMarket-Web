@@ -16,6 +16,7 @@ const HomeScreen = () => {
                 height="100"
                 className="d-inline-block align-top"
                 alt=""
+                loading="lazy"
             />
           </div>
           <h1 className="text-center"><span>Builds</span>Market</h1>
@@ -24,7 +25,7 @@ const HomeScreen = () => {
              Our offerings cover not just non-exclusive builds but also unique exclusive projects, catering to the
              diversity of our clients' needs and visions.
           </p>
-          <div className="text-center">
+          <div className="text-center mt-3">
             <Link to="/about" className="homescreen-button">Read More!</Link>
           </div>
         </div>

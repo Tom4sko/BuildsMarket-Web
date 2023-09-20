@@ -16,6 +16,7 @@ const DonateScreen = () => {
                height="180"
                className="d-inline-block align-top donate-image"
                alt=""
+               loading="lazy"
           />
           <div className="text-center">
             <Link to="https://www.paypal.com/paypalme/buildsmarket" className="donate-button" target="_blank">paypal.me/<span className="donate-span">buildsmarket</span></Link>

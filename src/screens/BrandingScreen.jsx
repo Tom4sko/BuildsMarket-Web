@@ -7,6 +7,7 @@ import logoThree from '../images/logoThree.svg'
 import logoFullOne from '../images/logoFullOne.svg'
 import logoFullTwo from '../images/logoFullTwo.svg'
 import logoFullThree from '../images/logoFullThree.svg'
+import { SiHiveBlockchain, SiBlockchaindotcom } from "react-icons/si";
 
 const BrandingScreen = () => {
   return (
@@ -64,10 +65,12 @@ const BrandingScreen = () => {
                   </div>
                 </div>
               <div className="mb-5">
-                <h4><span className="branding-span">Icon</span> Pack</h4>
+                <h4 className="mt-4"><span className="branding-span">Icon</span> Pack</h4>
                 <div className="row">
                   <p className="p-font">
+                    <SiBlockchaindotcom />
                     Microsoft <span className="branding-span">Fluent UI</span> <br/>
+                    <SiHiveBlockchain />
                     Icons by <span className="branding-span">Iconduck</span>
                   </p>
                 </div>
