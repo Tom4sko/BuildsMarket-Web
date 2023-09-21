@@ -9,14 +9,14 @@ export const LeadershipData = [
     {
         id: 2,
         nickname: 'Adonymous',
-        position: 'Graphic designer',
+        position: 'Administrator',
         social: 'https://www.epic-central.eu/',
         photo: '../src/images/LeadershipImages/Adonymous.png',
     },
     {
         id: 3,
         nickname: 'TagzTurtlee',
-        position: 'Render artist',
+        position: 'Administrator',
         social: 'https://www.instagram.com/tagzturtlee_builder/',
         photo: '../src/images/LeadershipImages/ReggyCZ.png',
     },

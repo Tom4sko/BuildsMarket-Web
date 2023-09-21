@@ -8,7 +8,7 @@ import '../scss/TeamScreen.scss'
 const LeadershipEngine = () => {
   return (
     <Container>
-      <Row>
+      <Row className="row d-flex justify-content-center">
         {LeadershipData.map((LeadershipItem) => {
           return (
             <Col sm={6} md={3} lg={3} key={LeadershipItem.id}>
