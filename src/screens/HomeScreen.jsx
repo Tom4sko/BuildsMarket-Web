@@ -23,7 +23,7 @@ const HomeScreen = () => {
           <p className="text-center">BuildsMarket.com is a collective of professional builders who have united to provide the market with
              high-quality builds at competitive prices. 
              Our offerings cover not just non-exclusive builds but also unique exclusive projects, catering to the
-             diversity of our clients' needs and visions.
+             diversity of our client's needs and visions.
           </p>
           <div className="text-center mt-3">
             <Link to="/about" className="homescreen-button">Read More!</Link>

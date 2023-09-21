@@ -18,9 +18,9 @@ const Footer = () => {
           </div>
           <div className="col-md-4 text-center mb-md mt-3 mb-1">
             <div className="footer-icons">
-              <a href="https://www.instagram.com/buildsmarket/"><BsInstagram /></a>
-              <a href="https://discord.buildsmarket.com/"><BsDiscord /></a>
-              <a href="https://twitter.com/BuildsMarket"><FaXTwitter /></a>
+              <a href="https://www.instagram.com/buildsmarket/" target="_blank"><BsInstagram /></a>
+              <a href="https://discord.buildsmarket.com/" target="_blank"><BsDiscord /></a>
+              <a href="https://twitter.com/BuildsMarket" target="_blank"><FaXTwitter /></a>
             </div>
             <p className="footer-text">contact@buildsmarket.com</p>
           </div>

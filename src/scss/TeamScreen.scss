@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import "variables";
+
+.leadership-section {
+    background-image: url('../images/leadership.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leadership-wrapper {
+    padding-top: calc(6vw);
+    padding-bottom: calc(8vw);
+}
+
+.paragraph {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: $main-white-color;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+@media only screen and (max-width: 700px) {
+    .paragraph {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .paragraph {
+        font-size: 14px;
+    }
+}
+
+.team-image {
+    width: auto;
+    max-height: 265px;
+    border-radius: 90px;
+}
+
+@media only screen and (max-width: 1201px) {
+    .team-image {
+        max-height: 200px;
+        border-radius: 60px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .team-image {
+        max-height: 135px;
+        border-radius: 50px;
+    }
+}
+
+
+h5 {
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: $main-white-color;
+    font-size: 24px;
+}
+
+.position {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: $main-white-color;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 1201px) {
+    .position {
+        font-size: 12px;
+    }
+}
+
+.position-administrator {
+    color: $light-green-color !important;
+}
+
+.social-icon {
+    font-size: 38px;
+    margin-top: -15px;
+}
+
+.team-card {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+}
