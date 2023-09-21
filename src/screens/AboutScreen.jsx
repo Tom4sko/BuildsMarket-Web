@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import '../scss/AboutScreen.scss'
+import SliderMain from '../components/Slider'
 
 const AboutScreen = () => {
   return (
@@ -26,7 +27,7 @@ const AboutScreen = () => {
           <div className="portfolio-wrapper text-center column">
             <h2>Portfolio</h2>
             <div className="portfolio-slider">
-              <h2>slider</h2>
+              <SliderMain />
             </div>
           </div>
         </Container>
