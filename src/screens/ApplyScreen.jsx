@@ -25,34 +25,35 @@ const ApplyScreen = () => {
             </div>
           </div>
 
-          <div className="form">
-            <form>
+          <div className="form-wrapper mt-4">
+            <form action="https://formspree.io/f/mnqkgbbq" method="POST">
               <div className="row">
-                <div className="col-6">
-                  <div className="form-group">
-                    <label for="nickname">Your Minecraft Nickname</label>
-                    <input type="text" name="nickname" placeholder="Nickname" autoComplete="off" required />
+                <div className="col-md-6 col-12 text-start">
+                  <div className="form-group d-flex flex-column">
+                    <label htmlFor="nickname" className="label-text">Your Minecraft Nickname</label>
+                    <input type="text" className="mt-2" name="nickname" placeholder="Nickname" autoComplete="off" required />
                   </div>
-                  <div className="form-group">
-                    <label for="email">E-Mail</label>
-                    <input type="email" name="email" placeholder="E-mail" autoComplete="off" required />
+                  <div className="form-group d-flex flex-column mt-2">
+                    <label htmlFor="email" className="label-text">E-Mail</label>
+                    <input type="email" className="mt-2" name="email" placeholder="E-mail" autoComplete="off" required />
                   </div>
-                  <div className="form-group">
-                    <label for="portfolio">Portfolio Link</label>
-                    <input type="text" name="portfolio" placeholder="https://example.com" autoComplete="off" required />
+                  <div className="form-group d-flex flex-column mt-2">
+                    <label htmlFor="portfolio" className="label-text">Portfolio Link</label>
+                    <input type="text" className="mt-2" name="portfolio" placeholder="https://example.com" autoComplete="off" required />
                   </div>
-                  <div className="form-group">
-                    <label for="pleasant-collective">What do you expect from us?</label>
-                    <input type="text" name="pleasant-collective" placeholder="Pleasant collective" autoComplete="off" required />
+                  <div className="form-group d-flex flex-column mt-2 mb-2">
+                    <label htmlFor="pleasant-collective" className="label-text">What do you expect from us?</label>
+                    <input type="text" className="mt-2" name="pleasant-collective" placeholder="Pleasant collective" autoComplete="off" required />
                   </div>
                 </div>
-                <div className="col-6">
-                  <div className="form-group">
-                    <label for="message">Why do you want to join?</label>
-                    <textarea rows="5" cols="60" name="message" placeholder="Start typing..." autoComplete='off' required></textarea>
+                <div className="col-md-6 col-12 text-start">
+                  <div className="form-group d-flex flex-column">
+                    <label htmlFor="message" className="label-text mb-2">Why do you want to join?</label>
+                    <textarea rows="8" cols="auto" name="message" placeholder="Start typing..." autoComplete='off' required></textarea>
                   </div>
-                  
-                  <button type="submit">Send</button>
+                  <div className="form-group text-center mt-4">
+                    <button type="submit" className="form-button">Send</button>
+                  </div>
                 </div>
               </div>
             </form>

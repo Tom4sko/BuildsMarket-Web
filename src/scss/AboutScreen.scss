@@ -46,3 +46,18 @@ h2 {
     font-size: 55px;
     text-transform: uppercase;
 }
+
+.portfolio-section {
+    background-image: url('../images/portfolioBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portfolio-wrapper {
+    padding-top: calc(8vw);
+    padding-bottom: calc(15vw);
+}
+
+.portfolio-slider {
+    margin-top: 200px;
+}

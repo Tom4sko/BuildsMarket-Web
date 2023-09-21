@@ -49,6 +49,75 @@
     border-color: $secondary-green-color !important;
 }
 
-.form {
-    border: 2px solid blue;
+.form-wrapper {
+    border: 2px solid transparent;
+}
+
+.label-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: $main-white-color;
+}
+
+input {
+    border: 2px solid $light-green-color;
+    color: $main-white-color;
+    background: transparent;
+    border-radius: 30px;
+    padding: 10px;
+    align-items: center;
+    text-align: start;
+    outline: none;
+    display: flex;
+    font-size: 24px;
+}
+
+input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: $gray-color;
+}
+
+input:focus {
+    border-color: $main-white-color;
+    color: $main-white-color;
+}
+
+.form-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: $main-white-color;
+    text-transform: uppercase;
+    border: 2px solid $light-green-color;
+    background-color: $darker-green-color;
+    border-radius: 30px;
+    padding: 7px 25px;
+}
+
+.form-button:hover {
+    background-color: $light-green-color;
+}
+
+textarea {
+    border: 2px solid $light-green-color;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    font-size: 24px;
+}
+
+textarea::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: $gray-color;
+}
+
+textarea:focus {
+    border-color: $main-white-color;
+    color: $main-white-color;
 }
