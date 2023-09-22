@@ -47,6 +47,18 @@ h2 {
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 500px) {
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    h2 {
+        font-size: 30px;
+    }
+}
+
 .portfolio-section {
     background-image: url('../images/portfolioBackground.png');
     background-repeat: no-repeat;

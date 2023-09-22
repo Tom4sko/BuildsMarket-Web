@@ -34,12 +34,6 @@ img {
     text-transform: uppercase;
 }
 
-@media only screen and (max-width: 365px) {
-    h2 {
-        font-size: 36px;
-    }
-}
-
 .slick-prev:before,
 .slick-next:before {
   display: none;

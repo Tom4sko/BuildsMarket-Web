@@ -5,7 +5,7 @@ import { FaGlobe } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import '../scss/TeamScreen.scss'
 
-const LeadershipEngine = () => {
+const PartnerEngine = () => {
   return (
     <Container>
       <Row className="row d-flex justify-content-center">
@@ -13,7 +13,7 @@ const LeadershipEngine = () => {
           return (
             <Col sm={6} md={3} lg={3} key={PartnerItem.id}>
               <div className="team-card">
-                <img src={PartnerItem.photo} alt="" className="team-image" />
+                <img src={PartnerItem.photo} alt="" className="team-image mb-2" />
                 <h5 className="mt-2">{PartnerItem.nickname}</h5>
                 <p className="position position-partner text-center">{PartnerItem.position}</p>
                 <div className="d-flex flex-row social-icon justify-content-center mb-5">
@@ -41,4 +41,4 @@ const LeadershipEngine = () => {
   );
 }
 
-export default LeadershipEngine;
+export default PartnerEngine;

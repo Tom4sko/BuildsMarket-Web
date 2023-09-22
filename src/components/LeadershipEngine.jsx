@@ -13,7 +13,7 @@ const LeadershipEngine = () => {
           return (
             <Col sm={6} md={3} lg={3} key={LeadershipItem.id}>
               <div className="team-card">
-                <img src={LeadershipItem.photo} alt="" className="team-image" />
+                <img src={LeadershipItem.photo} alt="" className="team-image mb-2" />
                 <h5 className="mt-2">{LeadershipItem.nickname}</h5>
                 <p className="position position-administrator text-center">{LeadershipItem.position}</p>
                 <div className="d-flex flex-row social-icon justify-content-center mb-5">
