@@ -3,7 +3,7 @@ export const PartnerData = [
         id: 1,
         nickname: 'Tom4sko',
         position: 'Partner',
-        social: 'https://www.instagram.com/z.tomino/',
+        instagram: 'https://www.instagram.com/z.tomino/',
         photo: '../src/images/PartnerImages/Tom4sko.png',
     },
     {
