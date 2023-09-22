@@ -9,7 +9,7 @@
 }
 
 .leadership-wrapper {
-    padding-top: calc(6vw);
+    padding-top: calc(8vw);
     padding-bottom: calc(8vw);
 }
 
@@ -21,6 +21,10 @@
     text-align: center;
     margin: 0 auto;
     max-width: 800px;
+}
+
+.paragraph-color {
+    color: $paragraph-color;
 }
 
 @media only screen and (max-width: 700px) {
@@ -55,7 +59,6 @@
     }
 }
 
-
 h5 {
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
@@ -80,13 +83,81 @@ h5 {
     color: $light-green-color !important;
 }
 
+.position-builder {
+    color: $secondary-purple-color !important;
+}
+
+.position-graphics {
+    color: $secondary-orange-color !important;
+}
+
+.position-renders {
+    color: $secondary-green-color !important;
+}
+
+.position-partner {
+    color: $secondary-partner-color !important;
+}
+
 .social-icon {
-    font-size: 38px;
+    font-size: 26px;
     margin-top: -15px;
+}
+
+.social-icon a:hover {
+    color: $icon-hover-lightgreen !important;
 }
 
 .team-card {
     margin-left: 15px;
     margin-right: 15px;
     width: auto;
+}
+
+.builders-section {
+    background-image: url('../images/builders.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.builders-wrapper {
+    padding-top: calc(6vw);
+    padding-bottom: calc(8vw);
+}
+
+.graphics-section {
+    background-image: url('../images/graphics.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.graphics-wrapper {
+    padding-top: calc(6vw);
+    padding-bottom: calc(8vw);
+}
+
+.render-section {
+    background-image: url('../images/renders.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.render-wrapper {
+    padding-top: calc(6vw);
+    padding-bottom: calc(8vw);
+}
+
+.partners-section {
+    background-image: url('../images/partners.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.partners-wrapper {
+    padding-top: calc(6vw);
+    padding-bottom: calc(8vw);
 }

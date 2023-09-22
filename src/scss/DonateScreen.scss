@@ -13,8 +13,8 @@
 }
 
 .donate-image {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .donate-button {
@@ -27,7 +27,8 @@
     border: 2px solid $effect-color-1;
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    padding: 15px;
+    padding: 15px 25px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 550px) {

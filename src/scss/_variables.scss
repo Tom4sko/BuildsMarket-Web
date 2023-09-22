@@ -3,6 +3,7 @@ $main-gray-color: #C5C5C5;
 $main-white-color: #FAFAFA;
 $darker-green-color: #0A7777;
 $light-green-color: #53ACAE;
+$icon-hover-lightgreen: #9b9fa0;
 $gray-color: #A9A9A9;
 $effect-color: rgb(22 22 22 / 0.3);
 $effect-color-1: rgb(10 119 119 / 0.3);
@@ -10,6 +11,8 @@ $effect-color-2: rgb(10 119 119 / 0.1);
 $secondary-purple-color: #B149EC;
 $secondary-orange-color: #EC8349;
 $secondary-green-color: #7BEC49;
+$secondary-partner-color: #49ECEC;
+$paragraph-color: #B3B3B3;
 
 @mixin button-style {
     background-color: $darker-green-color;

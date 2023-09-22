@@ -5,8 +5,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../scss/Navbar.scss'
 import logo from '../images/logo.png'
 import { BsArrowRight } from "react-icons/bs";
+import { useLocation } from 'react-router-dom';
 
 function NavScrollExample() {
+
+  const location = useLocation();
+
   return (
     <Navbar expand="lg" className="nav-bg-colour">
       <Container>
@@ -26,10 +30,10 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="about">About</Nav.Link>
-            <Nav.Link href="team">Team</Nav.Link>
-            <Nav.Link href="branding">Branding</Nav.Link>
-            <Nav.Link href="donate">Donate</Nav.Link>
+            <Nav.Link href="about" className={location.pathname === '/about' ? 'active' : ''}>About</Nav.Link>
+            <Nav.Link href="team" className={location.pathname === '/team' ? 'active' : ''}>Team</Nav.Link>
+            <Nav.Link href="branding" className={location.pathname === '/branding' ? 'active' : ''}>Branding</Nav.Link>
+            <Nav.Link href="donate" className={location.pathname === '/donate' ? 'active' : ''}>Donate</Nav.Link>
           </Nav>
             <Button type="button" href="apply" variant="outline-success" className="custom-apply-button">Apply <BsArrowRight /></Button>
         </Navbar.Collapse>

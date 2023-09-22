@@ -8,12 +8,12 @@ const ApplyScreen = () => {
       <Container>
         <div className="apply-wrapper column text-center">
           <h2>Apply</h2>
-          <p className="apply-p mt-2">
+          <p className="apply-p mt-3 paragraph-color">
             Become a member of ambitious and talented individuals, where you not only learn things but can also use them
             to your advantage and earn something!
           </p>
 
-          <div className="row roles-wrapper mt-3">
+          <div className="row roles-wrapper mt-5">
             <div className="col mb-4">
               <p className="role role-builder">Builder</p>
             </div>
@@ -51,7 +51,7 @@ const ApplyScreen = () => {
                     <label htmlFor="message" className="label-text mb-2">Why do you want to join?</label>
                     <textarea rows="8" cols="auto" name="message" placeholder="Start typing..." autoComplete='off' required></textarea>
                   </div>
-                  <div className="form-group text-center mt-4">
+                  <div className="col-12 form-group text-center text-sm-end mt-4">
                     <button type="submit" className="form-button">Send</button>
                   </div>
                 </div>

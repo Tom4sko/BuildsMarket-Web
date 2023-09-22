@@ -18,6 +18,7 @@ const DonateScreen = () => {
                alt=""
                loading="lazy"
           />
+          <p className="paragraph paragraph-color mb-5">If you like what we do and how we do it and want us to keep going, you can volunteer to support us. We are grateful for every support, it helps us to develop.</p>
           <div className="text-center">
             <Link to="https://www.paypal.com/paypalme/buildsmarket" className="donate-button" target="_blank">paypal.me/<span className="donate-span">buildsmarket</span></Link>
           </div>

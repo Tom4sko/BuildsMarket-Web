@@ -66,11 +66,11 @@ const BrandingScreen = () => {
                 </div>
               <div className="mb-5">
                 <h4 className="mt-4"><span className="branding-span">Icon</span> Pack</h4>
-                <div className="row">
+                <div className="d-flex align-items-center justify-content-center text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 20 20"><path fill="white" d="M10.724 2.053a.5.5 0 0 0-.448 0l-5 2.5A.5.5 0 0 0 5 5v9.5a.5.5 0 0 0 .243.429l5 3A.5.5 0 0 0 11 17.5v-4.691l4.724-2.362a.5.5 0 0 0 0-.894L11.618 7.5l4.106-2.053a.5.5 0 0 0 0-.894l-5-2.5Z"/></svg>
+                  <svg fill="none" height="38" viewBox="0 0 32 32" width="38" xmlns="http://www.w3.org/2000/svg"><path d="m16.5528 2.10557c.2815-.14076.6129-.14076.8944 0l8 4c.3388.16939.5528.51566.5528.89443s-.214.72504-.5528.89443l-6.2111 3.10557 6.2111 3.1056c.3388.1694.5528.5156.5528.8944s-.214.725-.5528.8944l-7.4472 3.7236v9.382c0 .3553-.1885.6839-.4952.8632-.3066.1794-.6854.1825-.9951.0084l-7.99996-4.5c-.31488-.1771-.50974-.5103-.50974-.8716v-17.5c0-.37877.214-.72504.55279-.89443zm1.4472 15.27643 4.7639-2.382-4.7639-2.382zm-2-8.00003v-4.76394l-4.7639 2.38197zm-6-.76394v4.76397l4.7639-2.382zm0 7.99997v7.2972l6 3.375v-7.6722zm6 .764v-4.764l-4.7639 2.382zm2-12.76397v4.76394l4.7639-2.38197z" fill="#FFFFFF"/></svg>
                   <p className="p-font">
-                    <SiBlockchaindotcom />
                     Microsoft <span className="branding-span">Fluent UI</span> <br/>
-                    <SiHiveBlockchain />
                     Icons by <span className="branding-span">Iconduck</span>
                   </p>
                 </div>

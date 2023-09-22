@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
-import { LeadershipData} from '../database/LeadershipData';
+import { RenderArtistsData } from '../database/RenderArtistsData';
 import { FaGlobe } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import '../scss/TeamScreen.scss'
@@ -9,23 +9,23 @@ const LeadershipEngine = () => {
   return (
     <Container>
       <Row className="row d-flex justify-content-center">
-        {LeadershipData.map((LeadershipItem) => {
+        {RenderArtistsData.map((RendersItem) => {
           return (
-            <Col sm={6} md={3} lg={3} key={LeadershipItem.id}>
+            <Col sm={6} md={3} lg={3} key={RendersItem.id}>
               <div className="team-card">
-                <img src={LeadershipItem.photo} alt="" className="team-image" />
-                <h5 className="mt-2">{LeadershipItem.nickname}</h5>
-                <p className="position position-administrator text-center">{LeadershipItem.position}</p>
+                <img src={RendersItem.photo} alt="" className="team-image" />
+                <h5 className="mt-2">{RendersItem.nickname}</h5>
+                <p className="position position-renders text-center">{RendersItem.position}</p>
                 <div className="d-flex flex-row social-icon justify-content-center mb-5">
-                  {LeadershipItem.social && (
-                      <a href={LeadershipItem.social} target="_blank" rel="">
+                  {RendersItem.social && (
+                      <a href={RendersItem.social} target="_blank" rel="">
                         <span>
                           <FaGlobe /> 
                         </span>
                       </a>
                     )}
-                    {LeadershipItem.instagram && (
-                      <a href={LeadershipItem.instagram} target="_blank" rel="">
+                    {RendersItem.instagram && (
+                      <a href={RendersItem.instagram} target="_blank" rel="">
                         <span>
                           <FaInstagram />
                         </span>
