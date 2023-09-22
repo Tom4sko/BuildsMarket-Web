@@ -3,6 +3,7 @@ import '../scss/HomeScreen.scss'
 import { Container } from 'react-bootstrap'
 import logo from '../images/LogoHuge.png'
 import { Link } from 'react-router-dom'
+import { BsDiscord } from "react-icons/bs";
 
 const HomeScreen = () => {
   return (
@@ -26,7 +27,7 @@ const HomeScreen = () => {
              diversity of our client's needs and visions.
           </p>
           <div className="text-center mt-5">
-            <Link to="/about" className="homescreen-button">Read More!</Link>
+            <Link to="https://discord.buildsmarket.com/" className="homescreen-button" target="_blank">Join Discord <BsDiscord /></Link>
           </div>
         </div>
       </Container>
