@@ -2,6 +2,10 @@
 
 This is portfolio website for eshop Buildsmarket.
 
+# How To Start
+
+npm run dev
+
 # Photos
 
 ![Buildsmarket1](https://github.com/Tom4sko/BuildsMarket-Web/assets/108126659/e8f79b7a-b304-490b-a1bc-ba9c5a93869b)
