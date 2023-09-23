@@ -7,7 +7,7 @@ import logo from '../images/logo.png'
 import { BsArrowRight } from "react-icons/bs";
 import { useLocation } from 'react-router-dom';
 
-function NavScrollExample() {
+function NavScroll() {
 
   const location = useLocation();
 
@@ -42,4 +42,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default NavScroll;
