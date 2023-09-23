@@ -3,8 +3,9 @@ export const GraphicsData = [
         id: 1,
         nickname: 'eriixrd',
         position: 'Graphic Designer',
-        instagram: 'https://www.instagram.com/erii.xrd/',
-        photo: '../src/images/unknownMember.png',
+        social: 'https://www.instagram.com/erii.xrd/',
+        instagram: 'https://www.instagram.com/erii.psd/',
+        photo: '../src/images/GraphicsImages/eriixrd.png',
     },
     {
         id: 2,

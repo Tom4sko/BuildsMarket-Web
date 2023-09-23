@@ -4,7 +4,7 @@ export const RenderArtistsData = [
         nickname: 'PICASSO',
         position: 'Render Artist',
         social: 'https://picasso114.artstation.com/',
-        photo: '../src/images/unknownMember.png',
+        photo: '../src/images/RenderArtistsImages/PICASSO.png',
     },
     {
         id: 2,
