@@ -72,7 +72,7 @@ const slider = () => {
                 SliderData.map((item) => (
                     <div className="card" key={item.id}>
                         <div className="card-image">
-                            <img src={item.linkImg} alt="" />
+                            <img src={item.linkImg} alt="slider-images" />
                         </div>
                         <p className="card-p">{item.title}</p>
                     </div>

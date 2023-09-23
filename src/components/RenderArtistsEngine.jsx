@@ -13,7 +13,7 @@ const RenderArtistEngine = () => {
           return (
             <Col sm={6} md={3} lg={3} key={RendersItem.id}>
               <div className="team-card">
-                <img src={RendersItem.photo} alt="" className="team-image mb-2" />
+                <img src={RendersItem.photo} alt="render-image" className="team-image mb-2" />
                 <h5 className="mt-2">{RendersItem.nickname}</h5>
                 <p className="position position-renders text-center">{RendersItem.position}</p>
                 <div className="d-flex flex-row social-icon justify-content-center mb-5">

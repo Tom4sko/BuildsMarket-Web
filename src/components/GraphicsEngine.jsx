@@ -13,7 +13,7 @@ const GraphicEngine = () => {
           return (
             <Col sm={6} md={3} lg={3} key={GraphicsItem.id}>
               <div className="team-card">
-                <img src={GraphicsItem.photo} alt="" className="team-image mb-2" />
+                <img src={GraphicsItem.photo} alt="graphics-image" className="team-image mb-2" />
                 <h5 className="mt-2">{GraphicsItem.nickname}</h5>
                 <p className="position position-graphics text-center">{GraphicsItem.position}</p>
                 <div className="d-flex flex-row social-icon justify-content-center mb-5">

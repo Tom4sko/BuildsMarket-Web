@@ -13,7 +13,7 @@ const BuildersEngine = () => {
           return (
             <Col sm={6} md={3} lg={3} key={BuildersItem.id}>
               <div className="team-card">
-                <img src={BuildersItem.photo} alt="" className="team-image mb-2" />
+                <img src={BuildersItem.photo} alt="builders-image" className="team-image mb-2" />
                 <h5 className="mt-2">{BuildersItem.nickname}</h5>
                 <p className="position position-builder text-center">{BuildersItem.position}</p>
                 <div className="d-flex flex-row social-icon justify-content-center mb-5">

@@ -15,7 +15,7 @@ const DonateScreen = () => {
                width="180"
                height="180"
                className="d-inline-block align-top donate-image"
-               alt=""
+               alt="paypal-logo"
                loading="lazy"
           />
           <p className="paragraph paragraph-color mb-5">If you like what we do and how we do it and want us to keep going, you can volunteer to support us. We are grateful for every support, it helps us to develop.</p>

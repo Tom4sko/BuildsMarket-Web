@@ -20,7 +20,7 @@ function NavScroll() {
                 width="50"
                 height="50"
                 className="d-inline-block align-top"
-                alt=""
+                alt="logo"
             />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

@@ -13,7 +13,7 @@ const PartnerEngine = () => {
           return (
             <Col sm={6} md={3} lg={3} key={PartnerItem.id}>
               <div className="team-card">
-                <img src={PartnerItem.photo} alt="" className="team-image mb-2" />
+                <img src={PartnerItem.photo} alt="partner-image" className="team-image mb-2" />
                 <h5 className="mt-2">{PartnerItem.nickname}</h5>
                 <p className="position position-partner text-center">{PartnerItem.position}</p>
                 <div className="d-flex flex-row social-icon justify-content-center mb-5">

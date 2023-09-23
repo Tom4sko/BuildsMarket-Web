@@ -12,6 +12,6 @@ export const GraphicsData = [
         nickname: 'wimax',
         position: 'Graphic Designer',
         instagram: 'https://www.instagram.com/wimax._.gfx/',
-        photo: '../src/images/unknownMember.png',
+        photo: '../src/images/GraphicsImages/wimax.png',
     },
 ]

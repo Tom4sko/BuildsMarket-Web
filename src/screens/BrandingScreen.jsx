@@ -22,16 +22,16 @@ const BrandingScreen = () => {
             <div className="col-md-4 text-md-start text-center">
               <div className="mb-5">
                 <h4>Main <span className="branding-span">Icon</span>Logos</h4>
-                <img src={logoOne} alt="" className="mx-2 mt-1" />
-                <img src={logoTwo} alt="" className="mx-1 mt-1" />
-                <img src={logoThree} alt="" className="mx-2 mt-1" />
+                <img src={logoOne} alt="logo" loading="lazy" className="mx-2 mt-1" />
+                <img src={logoTwo} alt="logo" loading="lazy" className="mx-1 mt-1" />
+                <img src={logoThree} alt="logo" loading="lazy" className="mx-2 mt-1" />
               </div>
               <div>
                 <h4>Main <span className="branding-span">Full</span>Logos</h4>
                 <div className="col">
-                  <img src={logoFullOne} alt="" className="mt-3 logoFull" />
-                  <img src={logoFullTwo} alt="" className="mt-3 logoFull" />
-                  <img src={logoFullThree} alt="" className="mt-3 mb-5 logoFull" />
+                  <img src={logoFullOne} alt="full-logo" loading="lazy" className="mt-3 logoFull" />
+                  <img src={logoFullTwo} alt="full-logo" loading="lazy" className="mt-3 logoFull" />
+                  <img src={logoFullThree} alt="full-logo" loading="lazy" className="mt-3 mb-5 logoFull" />
                 </div>
               </div>
             </div>
