@@ -9,7 +9,8 @@ const DonateScreen = () => {
     <section className="donate-section">
       <Container>
         <div className="column text-center donate-wrapper">
-          <h2>Donate</h2>
+          <h2 className="mb-3">Donate</h2>
+          <p className="paragraph paragraph-color mb-4">If you like what we do and how we do it and want us to keep going, you can volunteer to support us. We are grateful for every support, it helps us to develop.</p>
           <img
                src={paypalLogo}
                width="180"
@@ -18,8 +19,7 @@ const DonateScreen = () => {
                alt="paypal-logo"
                loading="lazy"
           />
-          <p className="paragraph paragraph-color mb-5">If you like what we do and how we do it and want us to keep going, you can volunteer to support us. We are grateful for every support, it helps us to develop.</p>
-          <div className="text-center">
+          <div className="text-center mt-4">
             <Link to="https://www.paypal.com/paypalme/buildsmarket" className="donate-button" target="_blank">paypal.me/<span className="donate-span">buildsmarket</span></Link>
           </div>
         </div>

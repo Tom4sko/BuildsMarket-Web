@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="col-md-4 text-center mb-md mt-3 mb-1">
             <div className="footer-icons">
               <a href="https://www.instagram.com/buildsmarket/" target="_blank" className="social-footer"><BsInstagram /></a>
-              <a href="https://discord.buildsmarket.com/" target="_blank" className="social-footer"><BsDiscord /></a>
+              <a href="#" target="_blank" className="social-footer"><BsDiscord /></a>
               <a href="https://twitter.com/BuildsMarket" target="_blank" className="social-footer"><FaXTwitter /></a>
             </div>
             <p className="footer-text">contact@buildsmarket.com</p>

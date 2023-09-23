@@ -25,6 +25,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@media only screen and (max-width: 500px) {
+    .apply-p {
+        font-size: 14px;
+    }
+}
+
 .role {
     @include roles;
 }

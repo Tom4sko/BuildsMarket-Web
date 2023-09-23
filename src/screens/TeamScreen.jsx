@@ -6,7 +6,6 @@ import BuildersEngine from '../components/BuildersEngine'
 import GraphicsEngine from '../components/GraphicsEngine'
 import RendersEngine from '../components/RenderArtistsEngine'
 import PartnerEngine from '../components/PartnerEngine'
-import RenderArtistEngine from '../components/RenderArtistsEngine'
 
 const TeamScreen = () => {
   return (
@@ -15,7 +14,7 @@ const TeamScreen = () => {
         <Container>
           <div className="leadership-wrapper text-center">
             <h2 className="mt-5 mt-md-0">Administrator</h2>
-            <p className="paragraph text-center mt-3 mt-lg-4 paragraph-color">Leadership is responsible for the entire BuildsMarket project. They accept or reject applications for
+            <p className="paragraph text-center mt-3 mt-lg-4 paragraph-color">Administrator is responsible for the entire BuildsMarket project. They accept or reject applications for
              positions and are responsible for the entire BuildsMarket systems.
             </p>
             <div className="mt-3">

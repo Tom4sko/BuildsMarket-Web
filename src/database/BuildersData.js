@@ -29,4 +29,11 @@ export const BuildersData = [
         instagram: 'https://www.instagram.com/ycon_1/',
         photo: '../src/images/BuildersImages/_yCoN_.png',
     },
+    {
+        id: 5,
+        nickname: 'Suinzyyy',
+        position: 'Builder',
+        instagram: 'https://www.instagram.com/suinzyyy/',
+        photo: '../src/images/BuildersImages/Suinzyyy.png',
+    },
 ]

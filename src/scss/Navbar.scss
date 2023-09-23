@@ -3,6 +3,9 @@
 
 .nav-bg-colour {
     background-color: $main-black-color;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .navbar-toggler  {
