@@ -7,7 +7,6 @@ import logoThree from '../images/logoThree.svg'
 import logoFullOne from '../images/logoFullOne.svg'
 import logoFullTwo from '../images/logoFullTwo.svg'
 import logoFullThree from '../images/logoFullThree.svg'
-import { SiHiveBlockchain, SiBlockchaindotcom } from "react-icons/si";
 
 const BrandingScreen = () => {
   return (

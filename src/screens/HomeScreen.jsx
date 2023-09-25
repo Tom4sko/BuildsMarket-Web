@@ -10,7 +10,7 @@ const HomeScreen = () => {
     <section className="home-section">
       <Container>
         <div className="column home-wrap">
-          <div className="text-center">
+          <div className="text-center mb-2">
           <img
                 src={logo}
                 width="100"
