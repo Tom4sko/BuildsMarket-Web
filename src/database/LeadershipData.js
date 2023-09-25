@@ -3,6 +3,7 @@ export const LeadershipData = [
         id: 1,
         nickname: 'ReggyCZ',
         position: 'Administrator',
+        social: 'https://bit.ly/3rvJhva',
         instagram: 'https://www.instagram.com/reggycz/',
         photo: '../src/images/LeadershipImages/ReggyCZ.png',
     },
