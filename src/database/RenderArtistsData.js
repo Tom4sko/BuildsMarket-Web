@@ -4,20 +4,20 @@ export const RenderArtistsData = [
         nickname: 'PICASSO',
         position: 'Render Artist',
         social: 'https://picasso114.artstation.com/',
-        photo: 'public/images/RenderArtistsImages/PICASSO.png',
+        photo: '/images/RenderArtistsImages/PICASSO.png',
     },
     {
         id: 2,
         nickname: 'Jayjayli',
         position: 'Render Artist',
         social: 'https://jayjay.li/',
-        photo: 'public/images/LeadershipImages/Jayjayli.png',
+        photo: '/images/LeadershipImages/Jayjayli.png',
     },
     {
         id: 3,
         nickname: 'Lord',
         position: 'Render Artist',
         social: 'https://www.behance.net/loitypvp',
-        photo: 'public/images/RenderArtistsImages/Lord.png',
+        photo: '/images/RenderArtistsImages/Lord.png',
     },
 ]
