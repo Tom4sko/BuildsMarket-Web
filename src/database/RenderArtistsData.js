@@ -20,4 +20,5 @@ export const RenderArtistsData = [
         social: 'https://www.behance.net/loitypvp',
         photo: '/images/RenderArtistsImages/Lord.png',
     },
+    
 ]
