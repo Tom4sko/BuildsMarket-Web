@@ -1,7 +1,7 @@
 import React from 'react'
 import '../scss/HomeScreen.scss'
 import { Container } from 'react-bootstrap'
-import logo from '../images/LogoHuge.png'
+import logo from '/public/images/LogoHuge.png'
 import { Link } from 'react-router-dom'
 import { BsDiscord } from "react-icons/bs";
 

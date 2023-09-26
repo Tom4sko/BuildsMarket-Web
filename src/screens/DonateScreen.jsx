@@ -1,7 +1,7 @@
 import React from 'react'
 import '../scss/DonateScreen.scss'
 import { Container } from 'react-bootstrap'
-import paypalLogo from '../images/paypalLogo.png'
+import paypalLogo from '/public/images/paypalLogo.png'
 import { Link } from 'react-router-dom'
 
 const DonateScreen = () => {

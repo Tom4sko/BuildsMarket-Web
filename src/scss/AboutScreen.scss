@@ -2,7 +2,7 @@
 @import "variables";
 
 .about-section {
-    background-image: url('../images/aboutus.png');
+    background-image: url('/public/images/aboutus.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -60,7 +60,7 @@ h2 {
 }
 
 .portfolio-section {
-    background-image: url('../images/portfolioBackground.png');
+    background-image: url('/public/images/portfolioBackground.png');
     background-repeat: no-repeat;
     background-size: cover;
 }

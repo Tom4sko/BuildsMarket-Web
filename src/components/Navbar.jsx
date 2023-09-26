@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../scss/Navbar.scss'
-import logo from '../images/logo.png'
+import logo from '/public/images/logo.png'
 import { BsArrowRight } from "react-icons/bs";
 import { useLocation } from 'react-router-dom';
 

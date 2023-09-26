@@ -1,12 +1,12 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import '../scss/BrandingScreen.scss'
-import logoOne from '../images/logoOne.svg'
-import logoTwo from '../images/logoTwo.svg'
-import logoThree from '../images/logoThree.svg'
-import logoFullOne from '../images/logoFullOne.svg'
-import logoFullTwo from '../images/logoFullTwo.svg'
-import logoFullThree from '../images/logoFullThree.svg'
+import logoOne from '/public/images/logoOne.svg'
+import logoTwo from '/public/images/logoTwo.svg'
+import logoThree from '/public/images/logoThree.svg'
+import logoFullOne from '/public/images/logoFullOne.svg'
+import logoFullTwo from '/public/images/logoFullTwo.svg'
+import logoFullThree from '/public/images/logoFullThree.svg'
 
 const BrandingScreen = () => {
   return (

@@ -5,13 +5,13 @@ export const GraphicsData = [
         position: 'Graphic Designer',
         social: 'https://www.instagram.com/erii.xrd/',
         instagram: 'https://www.instagram.com/erii.psd/',
-        photo: '../src/images/GraphicsImages/eriixrd.png',
+        photo: 'public/images/GraphicsImages/eriixrd.png',
     },
     {
         id: 2,
         nickname: 'wimax',
         position: 'Graphic Designer',
         instagram: 'https://www.instagram.com/wimax._.gfx/',
-        photo: '../src/images/GraphicsImages/wimax.png',
+        photo: 'public/images/GraphicsImages/wimax.png',
     },
 ]

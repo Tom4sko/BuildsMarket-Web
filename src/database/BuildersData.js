@@ -4,14 +4,14 @@ export const BuildersData = [
         nickname: 'Wajt_',
         position: 'Builder',
         instagram: 'https://www.instagram.com/wajt_builder/',
-        photo: '../src/images/BuildersImages/Wajt_.png',
+        photo: 'public/images/BuildersImages/Wajt_.png',
     },
     {
         id: 2,
         nickname: 'Pohor',
         position: 'Builder',
         instagram: 'https://www.instagram.com/pohorek_builder/',
-        photo: '../src/images/BuildersImages/pohor.png',
+        photo: 'public/images/BuildersImages/pohor.png',
     },
     {
         id: 3,
@@ -19,7 +19,7 @@ export const BuildersData = [
         position: 'Builder',
         social: 'https://hyyzounn.crevado.com/',
         instagram: 'https://www.instagram.com/hyyzounn/',
-        photo: '../src/images/BuildersImages/Hyyzounn.png',
+        photo: 'public/images/BuildersImages/Hyyzounn.png',
     },
     {
         id: 4,
@@ -27,13 +27,13 @@ export const BuildersData = [
         position: 'Builder',
         social: 'https://ycon.crevado.com/my-work',
         instagram: 'https://www.instagram.com/ycon_1/',
-        photo: '../src/images/BuildersImages/_yCoN_.png',
+        photo: 'public/images/BuildersImages/_yCoN_.png',
     },
     {
         id: 5,
         nickname: 'Suinzyyy',
         position: 'Builder',
         instagram: 'https://www.instagram.com/suinzyyy/',
-        photo: '../src/images/BuildersImages/Suinzyyy.png',
+        photo: 'public/images/BuildersImages/Suinzyyy.png',
     },
 ]

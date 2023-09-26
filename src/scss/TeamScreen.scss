@@ -3,7 +3,7 @@
 @import "variables";
 
 .leadership-section {
-    background-image: url('../images/leadership.png');
+    background-image: url('/public/images/leadership.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -116,7 +116,7 @@ h5 {
 }
 
 .builders-section {
-    background-image: url('../images/builders.png');
+    background-image: url('/public/images/builders.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -128,7 +128,7 @@ h5 {
 }
 
 .graphics-section {
-    background-image: url('../images/graphics.png');
+    background-image: url('/public/images/graphics.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -140,7 +140,7 @@ h5 {
 }
 
 .render-section {
-    background-image: url('../images/renders.png');
+    background-image: url('/images/renders.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -152,7 +152,7 @@ h5 {
 }
 
 .partners-section {
-    background-image: url('../images/partners.png');
+    background-image: url('../public/images/partners.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
