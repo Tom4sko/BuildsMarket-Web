@@ -13,15 +13,15 @@ const ApplyScreen = () => {
             to your advantage and earn something!
           </p>
 
-          <div className="row roles-wrapper mt-5">
-            <div className="col mb-4">
-              <p className="role role-builder">Builder</p>
+          <div className="d-flex flex-wrap mt-5 justify-content-center buttons-apply-wrapper">
+            <div className=" mb-4">
+              <button type="button" className="role role-builder">Builder</button>
             </div>
-            <div className="col mb-4">
-              <p className="role role-graphic">Graphic</p>
+            <div className= "mb-4">
+              <button type="button" className="role role-graphic">Graphic</button>
             </div>
-            <div className="col mb-4">
-              <p className="role role-render">Render</p>
+            <div className=" mb-4">
+              <button type="button" className="role role-render">Render</button>
             </div>
           </div>
 

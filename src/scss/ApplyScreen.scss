@@ -135,3 +135,9 @@ textarea:focus {
 .paragraph-color {
     color: $paragraph-color;
 }
+
+@media (max-width: 600px) {
+    .buttons-apply-wrapper {
+      flex-direction: column;
+    }
+  }
