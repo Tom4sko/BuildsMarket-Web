@@ -46,14 +46,32 @@
     border-color: $secondary-purple-color !important;
 }
 
+.role-builder:hover {
+    background-color: $secondary-purple-color;
+    color: $main-white-color !important;
+    border-color: $main-white-color !important;
+}
+
 .role-graphic {
     color: $secondary-orange-color !important;
     border-color: $secondary-orange-color !important;
 }
 
+.role-graphic:hover {
+    background-color: $secondary-orange-color;
+    color: $main-white-color !important;
+    border-color: $main-white-color !important;
+}
+
 .role-render {
     color: $secondary-green-color !important;
     border-color: $secondary-green-color !important;
+}
+
+.role-render:hover {
+    background-color: $secondary-green-color;
+    color: $main-white-color !important;
+    border-color: $main-white-color !important;
 }
 
 .form-wrapper {
