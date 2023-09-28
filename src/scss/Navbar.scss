@@ -27,11 +27,13 @@
   font-weight: 400;
   font-size: 22px;
   border: none;
+  transition: ease 0.8s;
 }
 
 .nav-link:hover {
     color: $main-white-color !important;
     font-weight: 600;
+    font-size: 24px;
   }
 
 .nav-link.active {

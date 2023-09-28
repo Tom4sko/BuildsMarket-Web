@@ -14,7 +14,7 @@ const ApplyScreen = () => {
           </p>
 
           <div className="d-flex flex-wrap mt-5 justify-content-center buttons-apply-wrapper">
-            <div className=" mb-4">
+            <div className="mb-4">
               <button type="button" className="role role-builder">Builder</button>
             </div>
             <div className= "mb-4">
