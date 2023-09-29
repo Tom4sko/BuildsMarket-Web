@@ -20,5 +20,11 @@ export const RenderArtistsData = [
         social: 'https://www.behance.net/loitypvp',
         photo: '/images/RenderArtistsImages/Lord.png',
     },
-    
+    {
+        id: 4,
+        nickname: 'nicco',
+        position: 'Render Artist',
+        social: 'https://niccxl.artstation.com/',
+        photo: '/images/RenderArtistsImages/nicco.png',
+    },
 ]

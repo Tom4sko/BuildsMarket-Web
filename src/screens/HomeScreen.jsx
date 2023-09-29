@@ -27,8 +27,7 @@ const HomeScreen = () => {
              diversity of our client's needs and visions.
           </p>
           <div className="text-center mt-5">
-            <Link to="#" className="homescreen-button" target="_blank">Coming Soon <BsDiscord /></Link>
-            {/* Join Discord - logo*/}
+            <Link to="https://discord.buildsmarket.com/" className="homescreen-button" target="_blank">Join Discord <BsDiscord /></Link>
           </div>
         </div>
       </Container>
