@@ -45,21 +45,23 @@
 }
 
 .team-image {
-    max-width: 265px;
-    max-height: 265px;
+    width: 265px;
+    height: 265px;
     border-radius: 90px;
 }
 
 @media only screen and (max-width: 1201px) {
     .team-image {
-        max-height: 200px;
+        height: 200px;
+        width: 200px;
         border-radius: 60px;
     }
 }
 
 @media only screen and (max-width: 992px) {
     .team-image {
-        max-height: 135px;
+        height: 135px;
+        width: 135px;
         border-radius: 50px;
     }
 }

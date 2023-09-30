@@ -1,17 +1,17 @@
 export const BuildersData = [
     {
         id: 1,
+        nickname: 'Pohor',
+        position: 'Lead Builder',
+        instagram: 'https://www.instagram.com/pohorek_builder/',
+        photo: '/images/BuildersImages/pohor.png',
+    },
+    {
+        id: 2,
         nickname: 'Wajt_',
         position: 'Builder',
         instagram: 'https://www.instagram.com/wajt_builder/',
         photo: '/images/BuildersImages/Wajt_.png',
-    },
-    {
-        id: 2,
-        nickname: 'Pohor',
-        position: 'Builder',
-        instagram: 'https://www.instagram.com/pohorek_builder/',
-        photo: '/images/BuildersImages/pohor.png',
     },
     {
         id: 3,
@@ -35,5 +35,18 @@ export const BuildersData = [
         position: 'Builder',
         instagram: 'https://www.instagram.com/suinzyyy/',
         photo: '/images/BuildersImages/Suinzyyy.png',
+    },
+    {
+        id: 6,
+        nickname: 'Imbublifuk21',
+        position: 'Builder',
+        instagram: 'https://www.instagram.com/imbublifuk21_/',
+        photo: '/images/BuildersImages/Imbublifuk21.png',
+    },
+    {
+        id: 7,
+        nickname: 'ItzzPhilip',
+        position: 'Builder',
+        photo: '/images/BuildersImages/ItzzPhilip.png',
     },
 ]
