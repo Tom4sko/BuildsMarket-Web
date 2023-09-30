@@ -47,6 +47,7 @@ export const BuildersData = [
         id: 7,
         nickname: 'ItzzPhilip',
         position: 'Builder',
+        instagram: 'https://www.instagram.com/itzzphilip/',
         photo: '/images/BuildersImages/ItzzPhilip.png',
     },
 ]
