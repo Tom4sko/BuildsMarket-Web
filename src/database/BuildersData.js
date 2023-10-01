@@ -50,4 +50,12 @@ export const BuildersData = [
         instagram: 'https://www.instagram.com/itzzphilip/',
         photo: '/images/BuildersImages/ItzzPhilip.png',
     },
+    {
+        id: 8,
+        nickname: 'Krysot',
+        position: 'Builder',
+        social: 'https://www.planetminecraft.com/member/krysot/',
+        instagram: 'https://www.instagram.com/krysot_cz/',
+        photo: '/images/BuildersImages/Krysot.png',
+    },
 ]
