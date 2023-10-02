@@ -1,10 +1,76 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
 import Turnstile, { useTurnstile } from "react-turnstile";
+import axios from 'axios';
 import '../scss/ApplyScreen.scss'
 
 const ApplyScreen = () => {
+  const apiServer = import.meta.env.VITE_API_SERVER;
+
   const turnstile = useTurnstile();
+
+  const [nickname, setNickname] = useState("");
+  const [email, setEmail] = useState("");
+  const [portfolio, setPortfolio] = useState("");
+  const [expected, setExpected] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [turnstileToken, setTurnstileToken] = useState("");
+
+  // TODO: Send state with (Builder, Graphic, Render) selected
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    if (!turnstileToken) {
+      console.error("Verification not complete!")
+      // TODO: Show error dialog to complete captcha
+
+      return;
+    }
+
+    let body = {
+      nickname,
+      email,
+      portfolio,
+      expected,
+      message,
+      turnstileToken
+    }
+
+    let response;
+
+    try {
+      response = await axios.post(`${apiServer}/apply`, body);
+    } catch (error) {
+      console.error("Server couldn't be reached!");
+      // TODO: Show error dialog
+
+      return;
+    }
+
+    if (response.status !== 200) {
+      console.error("Something went wrong!")
+      // TODO: Show error dialog
+
+      return;
+    }
+
+    if (!response.data["success"]) {
+      console.error(`Server replied with error: ${response.data["error"]}`)
+      // TODO: Show error dialog
+
+      // turnstile_unreachable -> Cloudflare server unreachable
+      // turnstile_badrequest -> Cloudflare server issue, or invalid request on backend
+      // turnstile_verifyfailed -> Failed to verify, try refresh (could be attack)
+      // email_notvalid -> Invalid or non-reachable email address
+      // unknown -> Unknown error occurred
+
+      return;
+    }
+
+    console.log("Request sent successfully!")
+  };
 
   return (
     <section className="apply-section">
@@ -29,34 +95,80 @@ const ApplyScreen = () => {
           </div>
 
           <div className="form-wrapper mt-4">
-            <form action="" method="POST">
+            <form onSubmit={handleSubmit}>
               <div className="row">
                 <div className="col-md-6 col-12 text-start">
                   <div className="form-group d-flex flex-column">
                     <label htmlFor="nickname" className="label-text">Your Minecraft Nickname</label>
-                    <input type="text" className="mt-2" name="nickname" placeholder="Nickname" autoComplete="off" required />
+                    <input
+                        type="text"
+                        className="mt-2"
+                        name="nickname"
+                        placeholder="Nickname"
+                        autoComplete="off"
+                        required
+                        value={nickname}
+                        onChange={(event) => setNickname(event.target.value)}
+                    />
                   </div>
                   <div className="form-group d-flex flex-column mt-2">
                     <label htmlFor="email" className="label-text">E-Mail</label>
-                    <input type="email" className="mt-2" name="email" placeholder="E-mail" autoComplete="off" required />
+                    <input
+                        type="email"
+                        className="mt-2"
+                        name="email"
+                        placeholder="E-mail"
+                        autoComplete="off"
+                        required
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)}
+                    />
                   </div>
                   <div className="form-group d-flex flex-column mt-2">
                     <label htmlFor="portfolio" className="label-text">Portfolio Link</label>
-                    <input type="text" className="mt-2" name="portfolio" placeholder="https://example.com" autoComplete="off" required />
+                    <input
+                        type="text"
+                        className="mt-2"
+                        name="portfolio"
+                        placeholder="https://example.com"
+                        autoComplete="off"
+                        required
+                        value={portfolio}
+                        onChange={(event) => setPortfolio(event.target.value)}
+                    />
                   </div>
                   <div className="form-group d-flex flex-column mt-2 mb-2">
                     <label htmlFor="pleasant-collective" className="label-text">What do you expect from us?</label>
-                    <input type="text" className="mt-2" name="pleasant-collective" placeholder="Pleasant collective" autoComplete="off" required />
+                    <input
+                        type="text"
+                        className="mt-2"
+                        name="pleasant-collective"
+                        placeholder="Pleasant collective"
+                        autoComplete="off"
+                        required
+                        value={expected}
+                        onChange={(event) => setExpected(event.target.value)}
+                    />
                   </div>
                 </div>
                 <div className="col-md-6 col-12 text-start">
                   <div className="form-group d-flex flex-column">
                     <label htmlFor="message" className="label-text mb-2">Why do you want to join?</label>
-                    <textarea rows="8" cols="auto" name="message" placeholder="Start typing..." autoComplete='off' required></textarea>
+                    <textarea
+                        rows="8"
+                        cols="auto"
+                        name="message"
+                        placeholder="Start typing..."
+                        autoComplete='off'
+                        required
+                        value={message}
+                        onChange={(event) => setMessage(event.target.value)}
+                    ></textarea>
                   </div>
                   <Turnstile
-                    sitekey=""
+                    sitekey={import.meta.env.VITE_TURNSTILE_PUBLIC_KEY}
                     theme="dark"
+                    onVerify={(token) => setTurnstileToken(token)}
                   />
                   <div className="col-12 form-group text-center text-sm-end mt-4">
                     <button type="submit" className="form-button">Send</button>
