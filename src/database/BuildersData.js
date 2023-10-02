@@ -58,4 +58,11 @@ export const BuildersData = [
         instagram: 'https://www.instagram.com/krysot_cz/',
         photo: '/images/BuildersImages/Krysot.png',
     },
+    {
+        id: 9,
+        nickname: 'pmarqs',
+        position: 'Builder',
+        social: 'https://www.behance.net/rommue',
+        photo: '/images/BuildersImages/pmarqs.png',
+    },
 ]
