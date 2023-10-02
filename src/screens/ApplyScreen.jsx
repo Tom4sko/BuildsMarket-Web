@@ -1,8 +1,11 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
+import Turnstile, { useTurnstile } from "react-turnstile";
 import '../scss/ApplyScreen.scss'
 
 const ApplyScreen = () => {
+  const turnstile = useTurnstile();
+
   return (
     <section className="apply-section">
       <Container>
@@ -26,7 +29,7 @@ const ApplyScreen = () => {
           </div>
 
           <div className="form-wrapper mt-4">
-            <form action="https://formspree.io/f/mnqkgbbq" method="POST">
+            <form action="" method="POST">
               <div className="row">
                 <div className="col-md-6 col-12 text-start">
                   <div className="form-group d-flex flex-column">
@@ -51,6 +54,10 @@ const ApplyScreen = () => {
                     <label htmlFor="message" className="label-text mb-2">Why do you want to join?</label>
                     <textarea rows="8" cols="auto" name="message" placeholder="Start typing..." autoComplete='off' required></textarea>
                   </div>
+                  <Turnstile
+                    sitekey=""
+                    theme="dark"
+                  />
                   <div className="col-12 form-group text-center text-sm-end mt-4">
                     <button type="submit" className="form-button">Send</button>
                   </div>
