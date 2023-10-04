@@ -62,6 +62,7 @@ const ApplyScreen = () => {
       // turnstile_badrequest -> Cloudflare server issue, or invalid request on backend
       // turnstile_verifyfailed -> Failed to verify, try refresh (could be attack)
       // email_notvalid -> Invalid or non-reachable email address
+      // role_notvalid -> Invalid role, requires only builder, graphic and render
       // unknown -> Unknown error occurred
 
       return;
