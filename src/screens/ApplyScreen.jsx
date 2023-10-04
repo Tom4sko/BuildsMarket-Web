@@ -1,23 +1,20 @@
 import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
-import Turnstile, { useTurnstile } from "react-turnstile";
+import Turnstile from "react-turnstile";
 import axios from 'axios';
 import '../scss/ApplyScreen.scss'
 
 const ApplyScreen = () => {
   const apiServer = import.meta.env.VITE_API_SERVER;
 
-  const turnstile = useTurnstile();
-
   const [nickname, setNickname] = useState("");
   const [email, setEmail] = useState("");
   const [portfolio, setPortfolio] = useState("");
   const [expected, setExpected] = useState("");
   const [message, setMessage] = useState("");
+  const [role, setRole] = useState("builder");
 
   const [turnstileToken, setTurnstileToken] = useState("");
-
-  // TODO: Send state with (Builder, Graphic, Render) selected
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -32,6 +29,7 @@ const ApplyScreen = () => {
     let body = {
       nickname,
       email,
+      role,
       portfolio,
       expected,
       message,
@@ -84,13 +82,13 @@ const ApplyScreen = () => {
 
           <div className="d-flex flex-wrap mt-5 justify-content-center buttons-apply-wrapper">
             <div className="mb-4">
-              <button type="button" className="role role-builder">Builder</button>
+              <button type="button" className={`role role-builder ${role === "builder" ? 'active' : ''}`} onClick={() => setRole("builder")}>Builder</button>
             </div>
             <div className= "mb-4">
-              <button type="button" className="role role-graphic">Graphic</button>
+              <button type="button" className={`role role-graphic ${role === "graphic" ? 'active' : ''}`} onClick={() => setRole("graphic")}>Graphic</button>
             </div>
             <div className=" mb-4">
-              <button type="button" className="role role-render">Render</button>
+              <button type="button" className={`role role-render ${role === "render" ? 'active' : ''}`} onClick={() => setRole("render")}>Render</button>
             </div>
           </div>
 
