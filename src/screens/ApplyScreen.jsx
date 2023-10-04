@@ -63,6 +63,7 @@ const ApplyScreen = () => {
       // turnstile_verifyfailed -> Failed to verify, try refresh (could be attack)
       // email_notvalid -> Invalid or non-reachable email address
       // role_notvalid -> Invalid role, requires only builder, graphic and render
+      // email_serverrefused -> SMTP server refused to send mail from backend
       // unknown -> Unknown error occurred
 
       return;
