@@ -11,17 +11,17 @@ export const SliderData = [
     },
     {
         id: 3,
-        title: 'Yellow Islands',
+        title: 'Yellow Island',
         linkImg: '/images/SliderImages/sliderMap3.png',
     },
     {
         id: 4,
-        title: 'China',
+        title: 'China Island',
         linkImg: '/images/SliderImages/sliderMap4.png',
     },
     {
         id: 5,
-        title: 'Yellow Islands',
+        title: 'Yellow Island',
         linkImg: '/images/SliderImages/sliderMap5.png',
     },
     {
