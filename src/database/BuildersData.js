@@ -65,4 +65,11 @@ export const BuildersData = [
         social: 'https://www.behance.net/rommue',
         photo: '/images/BuildersImages/pmarqs.png',
     },
+    {
+        id: 10,
+        nickname: 'Chinasky',
+        position: 'Builder',
+        social: 'http://chinasky.tilda.ws/',
+        photo: '/images/BuildersImages/Chinasky.png',
+    },
 ]
