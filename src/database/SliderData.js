@@ -11,7 +11,7 @@ export const SliderData = [
     },
     {
         id: 3,
-        title: 'Red Village',
+        title: 'Yellow Islands',
         linkImg: '/images/SliderImages/sliderMap3.png',
     },
     {
@@ -23,5 +23,10 @@ export const SliderData = [
         id: 5,
         title: 'Yellow Islands',
         linkImg: '/images/SliderImages/sliderMap5.png',
+    },
+    {
+        id: 6,
+        title: 'Jungle Ruins',
+        linkImg: '/images/SliderImages/sliderMap6.png',
     },
 ]
