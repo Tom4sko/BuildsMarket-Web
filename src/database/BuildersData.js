@@ -27,7 +27,7 @@ export const BuildersData = [
         position: 'Builder',
         social: 'https://ycon.crevado.com/my-work',
         instagram: 'https://www.instagram.com/ycon_1/',
-        photo: '/images/BuildersImages/_yCoN_.png',
+        photo: '/images/BuildersImages/_yCoN_.jpg',
     },
     {
         id: 5,
