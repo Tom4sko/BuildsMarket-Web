@@ -15,11 +15,10 @@ export const BuildersData = [
     },
     {
         id: 3,
-        nickname: 'Hyyzounn',
+        nickname: 'Fstno',
         position: 'Builder',
-        social: 'https://hyyzounn.crevado.com/',
-        instagram: 'https://www.instagram.com/hyyzounn/',
-        photo: '/images/BuildersImages/Hyyzounn.png',
+        social: 'https://imgur.com/a/Ouk9b4a',
+        photo: '/images/BuildersImages/Fstno.png',
     },
     {
         id: 4,
@@ -71,5 +70,19 @@ export const BuildersData = [
         position: 'Builder',
         social: 'http://chinasky.tilda.ws/',
         photo: '/images/BuildersImages/Chinasky.png',
+    },
+    {
+        id: 11,
+        nickname: 'Shirokun003',
+        position: 'Builder',
+        social: 'https://www.artstation.com/shirokun003',
+        photo: '/images/BuildersImages/Shirokun003.png',
+    },
+    {
+        id: 12,
+        nickname: 'KiRyaTryHARD',
+        position: 'Builder',
+        social: 'https://imgur.com/a/lvtE50g',
+        photo: '/images/BuildersImages/KiRyaTryHARD.png',
     },
 ]

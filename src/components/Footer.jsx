@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import '../scss/Footer.scss'
-import { BsInstagram, BsDiscord } from "react-icons/bs";
+import { BsInstagram, BsDiscord, BsYoutube, BsTiktok } from "react-icons/bs";
 import { FaXTwitter} from "react-icons/fa6";
 
 const Footer = () => {
@@ -18,9 +18,11 @@ const Footer = () => {
           </div>
           <div className="col-md-4 text-center mb-md mt-3 mb-1">
             <div className="footer-icons">
+              <a href="https://www.youtube.com/@buildsmarket" target="_blank" className="social-footer"><BsYoutube /></a>
               <a href="https://www.instagram.com/buildsmarket/" target="_blank" className="social-footer"><BsInstagram /></a>
               <a href="https://discord.buildsmarket.com/" target="_blank" className="social-footer"><BsDiscord /></a>
               <a href="https://twitter.com/BuildsMarket" target="_blank" className="social-footer"><FaXTwitter /></a>
+              <a href="https://www.tiktok.com/@buildsmarket/" target="_blank" className="social-footer"><BsTiktok /></a>
             </div>
             <p className="footer-text">contact@buildsmarket.com</p>
           </div>

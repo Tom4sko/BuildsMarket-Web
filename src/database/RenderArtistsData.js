@@ -27,4 +27,11 @@ export const RenderArtistsData = [
         social: 'https://niccxl.artstation.com/',
         photo: '/images/RenderArtistsImages/nicco.png',
     },
+    {
+        id: 5,
+        nickname: 'guipues100_',
+        position: 'Render Artist',
+        social: 'https://www.artstation.com/guipues',
+        photo: '/images/RenderArtistsImages/guipues100_.png',
+    },
 ]
