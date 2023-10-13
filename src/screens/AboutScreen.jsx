@@ -15,7 +15,7 @@ const AboutScreen = () => {
                     Our journey is about a group of young enthusiasts from diverse backgrounds who came together in 2023 to kickstart this project. Our primary mission is to empower builders by providing them with the support they need to sell high-quality, budget-friendly Minecraft builds, fostering mutual growth as a community. 
                   </p>
                   <p className="mt-3">
-                    Looking forward, we have bold plans to further expand and develop this project, with the vision of transforming this platform into a space where builders can unite, create, and share their art with the world. We are committed to creating an environment where creativity knows no bounds
+                    Looking forward, we have bold plans to further expand and develop this project, with the vision of transforming this platform into a space where builders can unite, create, and share their art with the world. We are committed to creating an environment where creativity knows no bounds.
                   </p>
                   <p className="mt-3">
                     If you want to become a builder, graphic or render artist with us, sell your creations under our brand, and earn money, don't hesitate to apply through the 'Apply' button!
