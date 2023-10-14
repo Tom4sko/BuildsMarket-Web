@@ -34,6 +34,10 @@ img {
     text-transform: uppercase;
 }
 
+.slick-list {
+    cursor: pointer;
+}
+
 .slick-prev:before,
 .slick-next:before {
   display: none;
