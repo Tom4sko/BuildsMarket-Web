@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { Container } from 'react-bootstrap'
 import Turnstile from "react-turnstile";
 import axios from 'axios';
 import '../scss/ApplyScreen.scss'
 
 const ApplyScreen = () => {
+  const formRef = useRef(null);
   const apiServer = import.meta.env.VITE_API_SERVER;
 
   const [nickname, setNickname] = useState("");
@@ -15,6 +16,16 @@ const ApplyScreen = () => {
   const [role, setRole] = useState("builder");
 
   const [turnstileToken, setTurnstileToken] = useState("");
+
+  const resetForm = () => {
+    setNickname('');
+    setEmail('');
+    setPortfolio('');
+    setExpected('');
+    setMessage('');
+    setRole('builder');
+    formRef.current.reset();
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -95,7 +106,7 @@ const ApplyScreen = () => {
           </div>
 
           <div className="form-wrapper mt-4">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} ref={formRef} onClick={resetForm}>
               <div className="row">
                 <div className="col-md-6 col-12 text-start">
                   <div className="form-group d-flex flex-column">
