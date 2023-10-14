@@ -13,10 +13,10 @@ const Footer = () => {
     <footer expand="lg" className="nav-bg-colour">
       <Container>
         <div className="row">
-          <div className="col-md-4 text-start mb-md mt-4 mb-1 text-center text-md-start">
+          <div className="col-md-4 text-start mb-md mt-4 mb-4 text-center text-md-start">
             <p className="footer-text">Copyright &copy; {year} <span className="footer-span">BuildsMarket.com</span>. All rights reserved. We are not affiliated with <span className="footer-span">Mojang Studios</span>.</p>
           </div>
-          <div className="col-md-4 text-center mb-md mt-3 mb-1">
+          <div className="col-md-4 text-center mb-md mt-3 mb-3">
             <div className="footer-icons">
               <a href="https://www.youtube.com/@buildsmarket" target="_blank" className="social-footer"><BsYoutube /></a>
               <a href="https://www.instagram.com/buildsmarket/" target="_blank" className="social-footer"><BsInstagram /></a>
@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
             <p className="footer-text">contact@buildsmarket.com</p>
           </div>
-          <div className="col-md-4 text-end mb-md mt-4 mb-1 text-center text-md-end">
+          <div className="col-md-4 text-end mb-md mt-4 mb-4 text-center text-md-end">
             <p className="footer-text">Designed by · Erik “<span className="footer-span">eriixrd</span>” Bednařík.<br/>Coded by · <span className="footer-span">Tomáš Zeleňák</span>.</p>
           </div>
         </div>
