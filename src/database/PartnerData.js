@@ -14,4 +14,11 @@ export const PartnerData = [
         instagram: 'https://www.instagram.com/inf1n1ty202/',
         photo: '/images/PartnerImages/Infinity.png',
     },
+    {
+        id: 3,
+        nickname: 'Liborsaf',
+        position: 'Partner',
+        instagram: 'https://www.instagram.com/liborsaf9/?igshid=MzRlODBiNWFlZA%3D%3D',
+        photo: '/images/PartnerImages/Liborsaf.png',
+    },
 ]

@@ -165,13 +165,14 @@ const ApplyScreen = () => {
                         onChange={(event) => setMessage(event.target.value)}
                     ></textarea>
                   </div>
-                  <Turnstile
-                    sitekey={import.meta.env.VITE_TURNSTILE_PUBLIC_KEY}
-                    theme="dark"
-                    onVerify={(token) => setTurnstileToken(token)}
-                  />
                   <div className="col-12 form-group text-center text-sm-end mt-4">
-                    <button type="submit" className="form-button">Send</button>
+                    <Turnstile
+                      sitekey={import.meta.env.VITE_TURNSTILE_PUBLIC_KEY}
+                      theme="dark"
+                      onVerify={(token) => setTurnstileToken(token)}
+                      className="mt-2"
+                    />
+                    <button type="submit" className="form-button mt-2">Send</button>
                   </div>
                 </div>
               </div>

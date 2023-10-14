@@ -1,8 +1,8 @@
 export const SliderData = [
     {
         id: 1,
-        title: 'Brown Valley',
-        linkImg: '/images/SliderImages/sliderMap1.png',
+        title: 'Yellow Island',
+        linkImg: '/images/SliderImages/sliderMap5.png',
     },
     {
         id: 2,
@@ -11,7 +11,7 @@ export const SliderData = [
     },
     {
         id: 3,
-        title: 'Yellow Island',
+        title: 'Fantasy Island',
         linkImg: '/images/SliderImages/sliderMap3.png',
     },
     {
@@ -21,12 +21,17 @@ export const SliderData = [
     },
     {
         id: 5,
-        title: 'Yellow Island',
-        linkImg: '/images/SliderImages/sliderMap5.png',
+        title: 'Brown Valley',
+        linkImg: '/images/SliderImages/sliderMap1.png',
     },
     {
         id: 6,
         title: 'Jungle Ruins',
         linkImg: '/images/SliderImages/sliderMap6.png',
+    },
+    {
+        id: 7,
+        title: 'Blue Rocks',
+        linkImg: '/images/SliderImages/sliderMap7.png',
     },
 ]
