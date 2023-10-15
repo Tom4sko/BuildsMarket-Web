@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
-import { Container } from 'react-bootstrap'
+import React, { useState } from "react";
+import { Container } from "react-bootstrap";
 import Turnstile from "react-turnstile";
-import axios from 'axios';
-import '../scss/ApplyScreen.scss'
+import axios from "axios";
+import "../scss/ApplyScreen.scss";
+import { BiErrorCircle } from "react-icons/bi";
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 const ApplyScreen = () => {
   const apiServer = import.meta.env.VITE_API_SERVER;
@@ -14,14 +16,22 @@ const ApplyScreen = () => {
   const [message, setMessage] = useState("");
   const [role, setRole] = useState("builder");
 
+  const [infoMessage, setInfoMessage] = useState(null);
+
   const [turnstileToken, setTurnstileToken] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    document.getElementById("form-button").remove();
+
     if (!turnstileToken) {
-      console.error("Verification not complete!")
+      //console.error("Verification not complete!");
       // TODO: Show error dialog to complete captcha
+
+      setInfoMessage(
+        "Failed to verify, so the mail could not be sent. Please refresh and try again or contact the administrators on Discord."
+      );
 
       return;
     }
@@ -33,29 +43,37 @@ const ApplyScreen = () => {
       portfolio,
       expected,
       message,
-      turnstileToken
-    }
+      turnstileToken,
+    };
 
     let response;
 
     try {
       response = await axios.post(`${apiServer}/apply`, body);
     } catch (error) {
-      console.error("Server couldn't be reached!");
+      //console.error("Server couldn't be reached!");
       // TODO: Show error dialog
+
+      setInfoMessage(
+        "Failed to communicate with server, so the mail could not be sent. Please refresh and try again or contact the administrators on Discord."
+      );
 
       return;
     }
 
     if (response.status !== 200) {
-      console.error("Something went wrong!")
+      //console.error("Something went wrong!");
       // TODO: Show error dialog
+
+      setInfoMessage(
+        "Something went wrong, so the mail could not be sent. Please refresh and try again or contact the administrators on Discord."
+      );
 
       return;
     }
 
     if (!response.data["success"]) {
-      console.error(`Server replied with error: ${response.data["error"]}`)
+      //console.error(`Server replied with error: ${response.data["error"]}`);
       // TODO: Show error dialog
 
       // turnstile_unreachable -> Cloudflare server unreachable
@@ -66,10 +84,41 @@ const ApplyScreen = () => {
       // email_serverrefused -> SMTP server refused to send mail from backend
       // unknown -> Unknown error occurred
 
+      const error = response.data["error"];
+      let errorMessage = `Server replied with error: ${error}`;
+
+      switch (error) {
+        case "turnstile_unreachable":
+          errorMessage =
+            "The Cloudflare server is unavailable, so the mail could not be sent. Please refresh and try again or contact the administrators on Discord.";
+          break;
+        case "turnstile_badrequest":
+          errorMessage =
+            "There is a problem with the Cloudflare server or an invalid request on the backend, so the mail could not be sent. Please refresh and try again or contact the administrators on Discord.";
+          break;
+        case "turnstile_verifyfailed":
+          errorMessage =
+            "Failed to verify the request, so the mail could not be sent. Please refresh and try again or contact the administrators on Discord.";
+          break;
+        case "email_notvalid":
+          errorMessage =
+            "The email address is invalid or not reachable, so the mail could not be sent. Please refresh and try again or contact the administrators on Discord.";
+          break;
+        case "email_serverrefused":
+          errorMessage =
+            "Failed to communicate with mail sending, so the mail could not be sent. Please refresh and try again or contact the administrators on Discord.";
+          break;
+      }
+
+      setInfoMessage(errorMessage);
+
       return;
     }
 
-    console.log("Request sent successfully!")
+    //console.log("Request sent successfully!");
+    setInfoMessage(
+      "The email has been sent successfully, thank you and we will get back to you as soon as possible."
+    );
   };
 
   return (
@@ -78,29 +127,57 @@ const ApplyScreen = () => {
         <div className="apply-wrapper column text-center">
           <h2>Apply</h2>
           <p className="apply-p mt-3 paragraph-color">
-            Become a member of ambitious and talented individuals, where you not only learn things but can also use them
-            to your advantage and earn something!
+            Become a member of ambitious and talented individuals, where you not
+            only learn things but can also use them to your advantage and earn
+            something!
           </p>
 
-          <div className="d-flex flex-wrap mt-5 justify-content-center buttons-apply-wrapper">
-            <div className="mb-4">
-              <button type="button" className={`role role-builder ${role === "builder" ? 'active' : ''}`} onClick={() => setRole("builder")}>Builder</button>
-            </div>
-            <div className= "mb-4">
-              <button type="button" className={`role role-graphic ${role === "graphic" ? 'active' : ''}`} onClick={() => setRole("graphic")}>Graphic</button>
-            </div>
-            <div className=" mb-4">
-              <button type="button" className={`role role-render ${role === "render" ? 'active' : ''}`} onClick={() => setRole("render")}>Render</button>
-            </div>
-          </div>
+          {!infoMessage && (
+            <div className="form-wrapper mt-4">
+              <div className="d-flex flex-wrap justify-content-center buttons-apply-wrapper">
+                <div className="mb-4">
+                  <button
+                    type="button"
+                    className={`role role-builder ${
+                      role === "builder" ? "active" : ""
+                    }`}
+                    onClick={() => setRole("builder")}
+                  >
+                    Builder
+                  </button>
+                </div>
+                <div className="mb-4">
+                  <button
+                    type="button"
+                    className={`role role-graphic ${
+                      role === "graphic" ? "active" : ""
+                    }`}
+                    onClick={() => setRole("graphic")}
+                  >
+                    Graphic
+                  </button>
+                </div>
+                <div className=" mb-4">
+                  <button
+                    type="button"
+                    className={`role role-render ${
+                      role === "render" ? "active" : ""
+                    }`}
+                    onClick={() => setRole("render")}
+                  >
+                    Render
+                  </button>
+                </div>
+              </div>
 
-          <div className="form-wrapper mt-4">
-            <form onSubmit={handleSubmit}>
-              <div className="row">
-                <div className="col-md-6 col-12 text-start">
-                  <div className="form-group d-flex flex-column">
-                    <label htmlFor="nickname" className="label-text">Your Minecraft Nickname</label>
-                    <input
+              <form onSubmit={handleSubmit}>
+                <div className="row">
+                  <div className="col-md-6 col-12 text-start">
+                    <div className="form-group d-flex flex-column">
+                      <label htmlFor="nickname" className="label-text">
+                        Your Minecraft Nickname
+                      </label>
+                      <input
                         type="text"
                         className="mt-2"
                         name="nickname"
@@ -109,11 +186,13 @@ const ApplyScreen = () => {
                         required
                         value={nickname}
                         onChange={(event) => setNickname(event.target.value)}
-                    />
-                  </div>
-                  <div className="form-group d-flex flex-column mt-2">
-                    <label htmlFor="email" className="label-text">E-Mail</label>
-                    <input
+                      />
+                    </div>
+                    <div className="form-group d-flex flex-column mt-2">
+                      <label htmlFor="email" className="label-text">
+                        E-Mail
+                      </label>
+                      <input
                         type="email"
                         className="mt-2"
                         name="email"
@@ -122,11 +201,13 @@ const ApplyScreen = () => {
                         required
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}
-                    />
-                  </div>
-                  <div className="form-group d-flex flex-column mt-2">
-                    <label htmlFor="portfolio" className="label-text">Portfolio Link</label>
-                    <input
+                      />
+                    </div>
+                    <div className="form-group d-flex flex-column mt-2">
+                      <label htmlFor="portfolio" className="label-text">
+                        Portfolio Link
+                      </label>
+                      <input
                         type="text"
                         className="mt-2"
                         name="portfolio"
@@ -135,11 +216,16 @@ const ApplyScreen = () => {
                         required
                         value={portfolio}
                         onChange={(event) => setPortfolio(event.target.value)}
-                    />
-                  </div>
-                  <div className="form-group d-flex flex-column mt-2 mb-2">
-                    <label htmlFor="pleasant-collective" className="label-text">What do you expect from us?</label>
-                    <input
+                      />
+                    </div>
+                    <div className="form-group d-flex flex-column mt-2 mb-2">
+                      <label
+                        htmlFor="pleasant-collective"
+                        className="label-text"
+                      >
+                        What do you expect from us?
+                      </label>
+                      <input
                         type="text"
                         className="mt-2"
                         name="pleasant-collective"
@@ -148,41 +234,60 @@ const ApplyScreen = () => {
                         required
                         value={expected}
                         onChange={(event) => setExpected(event.target.value)}
-                    />
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="col-md-6 col-12 text-start">
-                  <div className="form-group d-flex flex-column">
-                    <label htmlFor="message" className="label-text mb-2">Why do you want to join?</label>
-                    <textarea
+                  <div className="col-md-6 col-12 text-start">
+                    <div className="form-group d-flex flex-column">
+                      <label htmlFor="message" className="label-text mb-2">
+                        Why do you want to join?
+                      </label>
+                      <textarea
                         rows="8"
                         cols="auto"
                         name="message"
                         placeholder="Start typing..."
-                        autoComplete='off'
+                        autoComplete="off"
                         required
                         value={message}
                         onChange={(event) => setMessage(event.target.value)}
-                    ></textarea>
-                  </div>
-                  <div className="col-12 form-group text-center text-sm-end mt-4">
-                    <Turnstile
-                      sitekey={import.meta.env.VITE_TURNSTILE_PUBLIC_KEY}
-                      theme="dark"
-                      onVerify={(token) => setTurnstileToken(token)}
-                      className="mt-2"
-                    />
-                    <button type="submit" className="form-button mt-2">Send</button>
+                      ></textarea>
+                    </div>
+                    <div className="col-12 form-group text-center text-sm-end mt-4">
+                      <Turnstile
+                        sitekey={import.meta.env.VITE_TURNSTILE_PUBLIC_KEY}
+                        theme="dark"
+                        onVerify={(token) => setTurnstileToken(token)}
+                        className="mt-2"
+                      />
+                      <button
+                        id="form-button"
+                        type="submit"
+                        className="form-button mt-2"
+                      >
+                        Send
+                      </button>
+                    </div>
                   </div>
                 </div>
+              </form>
+            </div>
+          )}
+
+          {infoMessage &&
+            (infoMessage.includes("successfull") ? (
+              <div className="info-messages">
+                <p className="info-message-p info-messages-succesfull"><IoIosCheckmarkCircleOutline size={28} /> {infoMessage}</p>
               </div>
-            </form>
-          </div>
-            
+            ) : (
+              <div className="info-messages">
+                <p className="info-message-p info-messages-failed"><BiErrorCircle size={28} /> {infoMessage}</p>
+              </div>
+            ))}
         </div>
       </Container>
     </section>
-  )
-}
+  );
+};
 
-export default ApplyScreen
+export default ApplyScreen;

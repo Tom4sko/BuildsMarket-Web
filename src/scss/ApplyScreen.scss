@@ -185,4 +185,46 @@ textarea:focus {
     .buttons-apply-wrapper {
       flex-direction: column;
     }
-  }
+}
+
+.info-messages {
+    margin-top: calc(6vw);
+    margin-bottom: calc(6vw);
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.info-message-p {
+    padding: 12px;
+    border: 3px solid transparent;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+@media (max-width: 850px) {
+    .info-message-p {
+      font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .info-message-p {
+      font-size: 12px;
+    }
+}
+
+.info-messages-succesfull {
+    color: $apply-green-color;
+    background-color: $apply-greenlight-color;
+    border: 3px solid $apply-green-color !important;
+    border-radius: 50px;
+}
+
+.info-messages-failed {
+    color: $apply-red-color;
+    background-color: $apply-redlight-color;
+    border: 3px solid $apply-red-color !important;
+    border-radius: 50px;
+}

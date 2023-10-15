@@ -59,7 +59,7 @@ export const BuildersData = [
     },
     {
         id: 9,
-        nickname: 'pmarqs',
+        nickname: 'Rommue',
         position: 'Builder',
         social: 'https://www.behance.net/rommue',
         photo: '/images/BuildersImages/pmarqs.png',
