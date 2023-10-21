@@ -85,4 +85,11 @@ export const BuildersData = [
         social: 'https://imgur.com/a/lvtE50g',
         photo: '/images/BuildersImages/KiRyaTryHARD.png',
     },
+    {
+        id: 13,
+        nickname: 'Hyyzounn',
+        position: 'Builder',
+        social: 'https://hyyzounn.crevado.com/',
+        photo: '/images/BuildersImages/Hyyzounn.png',
+    },
 ]
